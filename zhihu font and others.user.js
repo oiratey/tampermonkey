@@ -10,6 +10,7 @@
 // @grant        none
 // ==/UserScript==
 
+//增大知乎部分block内字体大小
 function large(objArr){
     for (var x in objArr) {
         var obj=objArr[x];
@@ -22,9 +23,9 @@ function large(objArr){
 }
 large(['feed-item','zu-main-content-inner','Question-main']);
 
-
+//屏蔽知乎标签logo图片
 (function() {
-	//1.åçjsåæ³
+	//1.原生js写法
    //let ad_list=document.getElementById("ad-list");
     //let aria_labes_s=document.getElementsByTagName('aria-label');
     let a_s=document.getElementsByTagName('a');
@@ -36,11 +37,12 @@ large(['feed-item','zu-main-content-inner','Question-main']);
         }
     }
 
+//加宽bing搜索结果宽度
 	let b_results_dom=document.getElementById('b_results');
 	if(b_results_dom!=null){
 	b_results_dom.style.width="848px";
 	}
 
-	//2.jQueryåæ³ï¼æ²¹ç´ç°å¨å·²ç»æ¯æjQueryäº
+	//2.jQuery写法，油猴现在已经支持jQuery了
 	 //$('#ad-list').hide();
 })();
