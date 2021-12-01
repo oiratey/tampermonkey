@@ -44,8 +44,19 @@ large(['feed-item','zu-main-content-inner','Question-main','Post-RichTextContain
         Post_RichTextContainer_s[i].style.width="990px";
         }
     }
+    let Question_main_s=document.getElementsByClassName('Question-main');
+    if (Question_main_s!=null){
+        for (let i = 0; i < Question_main_s.length; i++){
+        Question_main_s[i].style.width="1200px";
+        }
+    }
 
-
+    let Question_mainColumn_s=document.getElementsByClassName('Question-mainColumn');
+    if (Question_mainColumn_s!=null){
+        for (let i = 0; i < Question_mainColumn_s.length; i++){
+        Question_mainColumn_s[i].style.width="900px";
+        }
+    }
 
 
 //加宽bing搜索结果宽度
