@@ -7,6 +7,7 @@
 // @match        https://www.zhihu.com/*
 // @match        *://*.zhihu.com/*
 // @match        *://*.bing.com/*
+// @match        *://*.weibo.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -59,6 +60,37 @@ large(['feed-item','zu-main-content-inner','Question-main','Post-RichTextContain
     }
 
 
+
+//新浪微博
+
+
+    let woo_box_flex_and_Frame_content_3XrxZ_s=document.getElementsByClassName('woo-box-flex Frame_content_3XrxZ');
+    if (woo_box_flex_and_Frame_content_3XrxZ_s!=null){
+        for (let i = 0; i < woo_box_flex_and_Frame_content_3XrxZ_s.length; i++){
+        woo_box_flex_and_Frame_content_3XrxZ_s[i].style.margin="50px";
+        }
+    }
+
+    let Main_full_1dfQ_s=document.getElementsByClassName('Main_full_1dfQ');
+    if (Main_full_1dfQ_s!=null){
+        for (let i = 0; i < Main_full_1dfQ_s.length; i++){
+        Main_full_1dfQ_s[i].style.width="1300px";
+        }
+    }
+
+    let Home_wrap_XXu6Z_s=document.getElementsByClassName('Home_wrap_XXu6Z');
+    if (Home_wrap_XXu6Z_s!=null){
+        for (let i = 0; i < Home_wrap_XXu6Z_s.length; i++){
+        Home_wrap_XXu6Z_s[i].style.width="900px";
+        }
+    }
+
+    let Main_side_i7Vti_s=document.getElementsByClassName('Main_side_i7Vti');
+    if (Main_side_i7Vti_s!=null){
+        for (let i = 0; i < Main_side_i7Vti_s.length; i++){
+        Main_side_i7Vti_s[i].style.display="none";
+        }
+    }
 //加宽bing搜索结果宽度
 	let b_results_dom=document.getElementById('b_results');
 	if(b_results_dom!=null){
