@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         zhihu_font_and_others
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.101
 // @description  try to take over the world!
 // @author       You
 // @match        https://www.zhihu.com/*
@@ -67,7 +67,7 @@ large(['feed-item','zu-main-content-inner','Question-main','Post-RichTextContain
     let woo_box_flex_and_Frame_content_3XrxZ_s=document.getElementsByClassName('woo-box-flex Frame_content_3XrxZ');
     if (woo_box_flex_and_Frame_content_3XrxZ_s!=null){
         for (let i = 0; i < woo_box_flex_and_Frame_content_3XrxZ_s.length; i++){
-        woo_box_flex_and_Frame_content_3XrxZ_s[i].style.margin="50px";
+        woo_box_flex_and_Frame_content_3XrxZ_s[i].style.margin="100px";
         }
     }
 
@@ -89,6 +89,27 @@ large(['feed-item','zu-main-content-inner','Question-main','Post-RichTextContain
     if (Main_side_i7Vti_s!=null){
         for (let i = 0; i < Main_side_i7Vti_s.length; i++){
         Main_side_i7Vti_s[i].style.display="none";
+        }
+    }
+
+    let Frame_main_3Z_V0_s=document.getElementsByClassName('Frame_main_3Z_V0');
+    if (Frame_main_3Z_V0_s!=null){
+        for (let i = 0; i < Frame_main_3Z_V0_s.length; i++){
+        Frame_main_3Z_V0_s[i].style.width="900px";
+        }
+    }
+
+    let woo_box_flex_and_Main_wrap_2GRrG_s=document.getElementsByClassName('woo-box-flex Main_wrap_2GRrG');
+    if (woo_box_flex_and_Main_wrap_2GRrG_s!=null){
+        for (let i = 0; i < woo_box_flex_and_Main_wrap_2GRrG_s.length; i++){
+        woo_box_flex_and_Main_wrap_2GRrG_s[i].style.width="900px";
+        }
+    }
+
+    let Main_full_1dfQX_s=document.getElementsByClassName('Main_full_1dfQX');
+    if (Main_full_1dfQX_s!=null){
+        for (let i = 0; i < Main_full_1dfQX_s.length; i++){
+        Main_full_1dfQX_s[i].style.width="900px";
         }
     }
 //加宽bing搜索结果宽度
