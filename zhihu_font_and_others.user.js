@@ -1,13 +1,14 @@
 // ==UserScript==
 // @name         zhihu_font_and_others
 // @namespace    http://tampermonkey.net/
-// @version      0.101
+// @version      0.102
 // @description  try to take over the world!
 // @author       You
 // @match        https://www.zhihu.com/*
 // @match        *://*.zhihu.com/*
 // @match        *://*.bing.com/*
 // @match        *://*.weibo.com/*
+// @match        *://*.libaclub.com/*
 // @grant        none
 // ==/UserScript==
 
@@ -112,6 +113,15 @@ large(['feed-item','zu-main-content-inner','Question-main','Post-RichTextContain
         Main_full_1dfQX_s[i].style.width="900px";
         }
     }
+
+//屏蔽篱笆论坛帖子列表中的广告
+    let ui_list_item_and_ui_list_merchant_ad_s=document.getElementsByClassName('ui-list-item ui-list-merchant-ad');
+    if (ui_list_item_and_ui_list_merchant_ad_s!=null){
+        for (let i = 0; i < ui_list_item_and_ui_list_merchant_ad_s.length; i++){
+        ui_list_item_and_ui_list_merchant_ad_s[i].style.display="None";
+        }
+    }
+
 //加宽bing搜索结果宽度
 	let b_results_dom=document.getElementById('b_results');
 	if(b_results_dom!=null){
