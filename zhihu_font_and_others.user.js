@@ -63,10 +63,16 @@ large(['feed-item','zu-main-content-inner','Question-main','Post-RichTextContain
     let ListShortcut_s=document.getElementsByClassName('ListShortcut');
     if (ListShortcut_s!=null){
         for (let i = 0; i < ListShortcut_s.length; i++){
-        ListShortcut_s[i].style.width="1300px";
+        ListShortcut_s[i].style.width="1100px";
         }
     }
 
+    let SearchMain_s=document.getElementsByClassName('SearchMain');
+    if (SearchMain_s!=null){
+        for (let i = 0; i < SearchMain_s.length; i++){
+        SearchMain_s[i].style.width="1100px";
+        }
+    }
 
 
 
