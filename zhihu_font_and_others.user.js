@@ -63,7 +63,7 @@ large(['feed-item','zu-main-content-inner','Question-main','Post-RichTextContain
     let ListShortcut_s=document.getElementsByClassName('ListShortcut');
     if (ListShortcut_s!=null){
         for (let i = 0; i < ListShortcut_s.length; i++){
-        ListShortcut_s[i].style.width="1100px";
+        ListShortcut_s[i].style.width="900px";
         }
     }
 
